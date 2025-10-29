@@ -3,9 +3,10 @@
 ## Comandos utilizados
 
 1. **Para crear la imagen**
+
 docker build -t flask-dice-app
 
-2. **Para ejecutarla**
+3. **Para ejecutarla**
 - `docker run --rm -p 8888:5000 flask-dice-app` sin la variable
 - `docker run --rm -p 8888:5000 -e DICE_SIDES=20 flask-dice-app` con la variable
 
