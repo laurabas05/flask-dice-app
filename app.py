@@ -11,9 +11,8 @@ def get_sides():
     dice_sides = os.getenv("DICE_SIDES", "6")
     # TODO: convertirlo a int, validar que sea >= 2 y devolverlo
     # TODO: si la variable no existe o es invalida, devolver 6
-    sides = int(dice_sides)
-    if (sides >= 2):
-        return sides
+    if (dice_sides.isdigit() and int(dice_sides) >= 2):
+        return int(dice_sides)
     else:
         return 6  # placeholder para que la app arranque
 
