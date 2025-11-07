@@ -4,4 +4,4 @@ services:
     ports:
       - "8080:5000"
     environment:
-      - DICE_SIDES=${DICE_SIDES:-8}
+      - DICE_SIDES=${DICE_SIDES:-6}
